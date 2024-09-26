@@ -8,7 +8,17 @@ class SplashViewBody extends StatefulWidget {
   State<SplashViewBody> createState() => _SplashViewBodyState();
 }
 
-class _SplashViewBodyState extends State<SplashViewBody> {
+
+class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProviderStateMixin{
+
+  late AnimationController animationController;
+  late  Animation slidingAnimation;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    animationController = AnimationController(vsync: vsync)
+  }
   @override
   Widget build(BuildContext context) {
     return Column(
