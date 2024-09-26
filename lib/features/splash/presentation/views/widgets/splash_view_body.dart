@@ -1,3 +1,4 @@
+import 'package:bookly_app_clean/core/utils/assets.dart';
 import 'package:flutter/cupertino.dart';
 
 class SplashViewBody extends StatelessWidget {
@@ -5,8 +6,9 @@ class SplashViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
+        Image.asset( AssetsData.logo)
 
       ],
     );
