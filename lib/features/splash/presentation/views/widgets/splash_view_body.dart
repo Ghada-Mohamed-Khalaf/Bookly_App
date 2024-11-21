@@ -17,7 +17,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with SingleTickerProvid
   void initState() {
     // TODO: implement initState
     super.initState();
-    animationController = AnimationController(vsync: vsync)
+    animationController = AnimationController(vsync:this,duration:Duration(milliseconds: 1) ,);
   }
   @override
   Widget build(BuildContext context) {
